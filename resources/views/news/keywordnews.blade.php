@@ -6,9 +6,31 @@
 	
 		
 	<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light bg-light">
+            
+<!-- 横幅が狭いときに出るハンバーガーボタン -->
+            <button type="button" class="navbar-toggler d-md-none" data-toggle="collapse" data-target="#nav-bar">
+                <span class="navbar-toggler-icon d-md-none "></span>
+            </button>
+         
+
+            <!-- メニュー項目 -->
+            <div class="collapse navbar-collapse" id="nav-bar">
+                <ul class="navbar-nav menu-catalog d-md-none">
+                	@include('auth.login_register')
+                	@if(Auth::check())
+                    <li class="nav-item manu-one menu-keyword d-md-none">{!! link_to_route('keyword.index', 'キーワード設定', [], []) !!}</li>
+                    <li class="nav-item menu-one d-md-none">{!! link_to_route('keywordsnews.index', 'ニュース【キーワード制限】', [], []) !!}</li>
+                    <li class="nav-item menu-one d-md-none">{!! link_to_route('allnews.index', 'ニュース【新着】', [], []) !!}</li>
+                    <li class="nav-item menu-one d-md-none">{!! link_to_route('favoritenews.index', 'ニュース【お気に入り】', [], []) !!}</li>
+                    <li class="nav-item menu-one d-md-none">{!! link_to_route('logout.get', 'ログアウト', [], []) !!}</li>
+                   @endif
+                </ul>
+            </div>
+            
+        </nav>
 			
-			
-		<a class="logo" href="../..index.html"><img src="../../images/logo-black.png" alt="Logo"></a>
+	
 			
 			
 		<ul class="main-menu" id="main-menu">

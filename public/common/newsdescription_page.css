@@ -1,0 +1,33 @@
+body{
+    background-image:url('/coffee-1284041_1920.jpg');
+    background-size: cover;
+}
+body, #wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  text-align:center;
+}
+footer {
+  margin-top: auto;
+}
+.first-message{
+    margin-top:30px;
+    font-size:30px;
+}
+.second-message{
+    margin-top:30px;
+    font-size:30px;
+}
+.third-message{
+    font-size:30px;
+    margin-top:30px;
+}
+.fouth-message{
+    font-size:30px;
+    margin-top:30px;
+}
+.fifth-message{
+    margin-top:30px;
+    font-size:30px;
+}

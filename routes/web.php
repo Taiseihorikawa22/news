@@ -39,6 +39,10 @@ Route::group(['prefix' => 'articles/{id}'], function () {
 
 
 Route::get('/','AllnewsController@index')->name('allnews.index');
+Route::get('description', function () {
+    return view('news.news_description');
+})->name('news.description');
+
 
 
 

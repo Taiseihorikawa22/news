@@ -13,7 +13,6 @@ class AllnewsController extends Controller
     public function index() {
         
         $articles = Article::orderBy('id','desc')->get();
-             
         return view('news.allnews', [
             'articles' => $articles
         ]);
@@ -23,7 +22,7 @@ class AllnewsController extends Controller
     }
 
     private function stock() {
-        $categories = array('business','entertainment', 'health', 'technology','general','science','sports');
+        $categories = ['business , general, health ,science  ,technology','entertaiment'];
         foreach($categories as $category){
             //カテゴリをパラメーターに追加してurlを生成
             $client = new \GuzzleHttp\Client( []);
@@ -33,7 +32,7 @@ class AllnewsController extends Controller
             $records_body = (string) $records->getBody();
             $records = json_decode($records_body);
             $articles = $records->articles;
-   
+          
             foreach($articles as $article){    
                 $record = new Article;
                 if(Article::where('url', $article->url)->exists()){

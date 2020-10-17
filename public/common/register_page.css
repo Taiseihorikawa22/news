@@ -1,4 +1,15 @@
 body{
-    background-image:url('/images/roman-kraft-_Zua2hyvTBk-unsplash.jpg');
+    background-image:url('/coffee-1284041_1920.jpg');
     background-size: cover;
+}
+body, #wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+}
+footer {
+  margin-top: auto;
+}
+.register-title{
+  margin-top:100px;
 }

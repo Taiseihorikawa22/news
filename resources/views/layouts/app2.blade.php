@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Newsbit</title>
+	<title>News【#0】</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -11,7 +11,8 @@
 	
 	<!-- Stylesheets -->
 	
-	<link href="/plugin-frameworks/bootstrap.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	
 	<link href="/fonts/ionicons.css" rel="stylesheet">
 	
@@ -21,8 +22,10 @@
    @yield('head')
 	
    @yield('head2')
+   
+   @yield('head3')
 	
-	
+   @yield('head4')
 </head>
 <body>
 	
@@ -34,8 +37,6 @@
 
 
 
-
-</body>
 	<footer class="bg-191 color-ccc">
 		
 		<div class="container">
@@ -111,8 +112,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</div><!-- oflow-hidden -->
 		</div><!-- container -->
 	</footer>
-	
-	<!-- SCIPTS -->
+		<!-- SCIPTS -->
 	
 	<script src="/plugin-frameworks/jquery-3.2.1.min.js"></script>
 	
@@ -122,5 +122,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	
 	<script src="/common/scripts.js"></script>
 	
+
 </body>
+	
+
+
 </html>

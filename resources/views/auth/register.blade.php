@@ -1,13 +1,13 @@
 @extends('layouts.app2')
-
+ 
 @section('content')
 
-    <div class="text-center">
+    <div class="text-center register-title">
         <h1>ユーザ登録</h1>
     </div>
-
-    <div class="row">
-        <div class="col-sm-6 offset-sm-3">
+    <div id="wrapper">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
 
             {!! Form::open(['route' => 'signup.post']) !!}
                 <div class="form-group">
@@ -32,8 +32,10 @@
 
                 {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
+            </div>
         </div>
-    </div>
+        </div>
+    
 @endsection
 @section('head2')
      <link href="/common/register_page.css" rel="stylesheet">

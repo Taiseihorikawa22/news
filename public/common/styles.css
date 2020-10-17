@@ -31,7 +31,9 @@
 1. PRIMARY STYLES
 --------------------------------- */
 
+
 html{ font-size: 100%; overflow-x: hidden; width: 100%; margin: 0px;  padding: 0px; touch-action: manipulation; }
+
 
 
 body{ font-size: 14px; font-family: 'Encode Sans Expanded', sans-serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
