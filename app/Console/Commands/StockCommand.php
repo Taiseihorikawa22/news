@@ -40,7 +40,7 @@ class StockCommand extends Command
      */
     public function handle()
     {
-        $categories = array('business','entertainment', 'health', 'technology','general','science','sports');
+        $categories = array('business','entertainment', 'health', 'technology','general','science');
   foreach($categories as $category){
     //カテゴリをパラメーターに追加してurlを生成
       $client = new \GuzzleHttp\Client( [
