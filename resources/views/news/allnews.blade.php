@@ -70,8 +70,7 @@
 						<img src="{{$article->urlToImage}}">
 						<h4 class="pt-20"><a class="pos-relative h-100 dplay-block" href={{ $article->url }} target="_blank"><b>{{$article->title}}<br/>{{$article->publishedAt}}</b></a></h4>
 						<ul class="list-li-mr-20 pt-10 mb-30">
-							<li class="color-lite-black"> <a href="#" class="color-black"><b>{{$article->author}}</b></a>
-							</li>
+							<li class="color-lite-black"> <a href="#" class="color-black"><b>{{$article->author}}</b></a></li>
 							<li><i class="color-primary mr-5 font-12 ion-ios-bolt"></i>@include('news.favorite_button')</li>
 							
 						</ul>
